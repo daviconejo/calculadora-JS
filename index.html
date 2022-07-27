@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3ff28adf5d.js" crossorigin="anonymous"></script>
+    <title>Calculadora | Davi Conejo</title>
+
+</head>
+<body>
+    <main class="calculator">
+        <div class="displayCSS">
+            <div id="userInput"></div>
+        </div>
+        <table class="buttons">
+            <tr>
+                <td><button class="btn color1" onclick="allClear()">AC</button></td>
+                <td><button class="btn color1" onclick="backspace()"><i class="fa-solid fa-delete-left"></i></button></td>
+                <td><button class="btn color1" onclick="percent()">%</button></td>
+                <td><button class="btn color2" onclick="insertOps('/')"><i class="fa-solid fa-divide"></i></button></td>
+            </tr>
+            <tr>
+                <td><button class="btn" onclick="insert('7')">7</button></td>
+                <td><button class="btn" onclick="insert('8')">8</button></td>
+                <td><button class="btn" onclick="insert('9')">9</button></td>
+                <td><button class="btn color2" onclick="insertOps('*')">x</button></td>
+            </tr>
+            <tr>
+                <td><button class="btn" onclick="insert('4')">4</button></td>
+                <td><button class="btn" onclick="insert('5')">5</button></td>
+                <td><button class="btn" onclick="insert('6')">6</button></td>
+                <td><button class="btn color2" onclick="insertOps('-')">-</button></td>
+            </tr>
+            <tr>
+                <td><button class="btn" onclick="insert('1')">1</button></td>
+                <td><button class="btn" onclick="insert('2')">2</button></td>
+                <td><button class="btn" onclick="insert('3')">3</button></td>
+                <td><button class="btn color2" onclick="insertOps('+')">+</button></td>
+            </tr>
+            <tr>
+                <td><button class="btn" onclick="insert('0')">0</button></td>
+                <td><button class="btn" onclick="appendPoint()">.</button></td>
+                <td><button class="btn" onclick="changeSign()"><i class="fa-solid fa-plus-minus"></i></button></td>
+                <td><button class="btn color2" id="calculate">=</button></td>
+            </tr>
+        </table>
+    </main>
+</body>
+<script src="main.js"></script>
+</html>
